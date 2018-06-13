@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Style>
+	body {background-color:Gray}
+	h2 {background-color:lightGray; text-align:center; font-size:250%}
+	p {font-size:120%}
+    </Style>
+ANIMAL PLANET
+</head>
+<body>
+	<h2>Welcome To Our Animal Planet Website</h2>
+
+	<p>A chance for you to verify if your favourite animal is among our list of animals. Click on the button below to verify.</p>
+
+	<button onclick="animalList()">Click here to check</button>
+	
+<script>
+	var animals = ["Antelope", "Bear", "Cat", "Chicken", "Dog", "Elephant", "Fox", "Frog", "Goat", "Giraffe", "Hyena", "Lion", "Monkey", "Owl", "Octopus", "Parrot", "Tortoise", "Whale", "Zebra" ];
+	
+	function animalList() {
+	var name = prompt("Please enter the name of your favourite animal");
+	if (animals.includes(name) == true) {alert("Congratulations!!!, your animal name is on our list.");} else {alert("Oops!, kindly type another animal name.");}
+}		
+
+</script>
+</body>	
+</html>
